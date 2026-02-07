@@ -1,0 +1,91 @@
+<%- include('partials/header') %>
+
+  <section class="hero">
+    <div class="hero-overlay"></div>
+    <div class="container hero-content">
+      <h1>Welcome Home</h1>
+      <p class="hero-subtitle">A place of faith, hope, and love for everyone</p>
+      <div class="hero-actions">
+        <a href="/about" class="btn btn-primary">Learn More</a>
+        <a href="/contact" class="btn btn-outline">Visit Us</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section welcome-section">
+    <div class="container">
+      <div class="welcome-grid">
+        <div class="welcome-text">
+          <h2 class="section-title">Welcome to Grace Community</h2>
+          <p>At Grace Community Church, we believe that everyone deserves a place to belong. Whether you're exploring faith for the first time or looking for a new church home, you'll find a warm, welcoming community here.</p>
+          <p>We are a diverse family of believers committed to growing in our relationship with God and serving one another with love. Our doors are open and our hearts are ready to welcome you.</p>
+          <a href="/about" class="btn btn-secondary">Our Story</a>
+        </div>
+        <div class="welcome-image">
+          <div class="image-placeholder">
+            <span class="placeholder-icon">&#9829;</span>
+            <span>Community & Fellowship</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section service-times-section">
+    <div class="container text-center">
+      <h2 class="section-title">Join Us This Week</h2>
+      <div class="service-cards">
+        <div class="service-card">
+          <div class="service-icon">&#9788;</div>
+          <h3>Sunday Worship</h3>
+          <p class="service-time">9:00 AM & 11:00 AM</p>
+          <p>Uplifting music, heartfelt prayer, and an inspiring message. Children's ministry available.</p>
+        </div>
+        <div class="service-card">
+          <div class="service-icon">&#9733;</div>
+          <h3>Wednesday Bible Study</h3>
+          <p class="service-time">7:00 PM</p>
+          <p>Dive deeper into God's Word in a welcoming small-group setting.</p>
+        </div>
+        <div class="service-card">
+          <div class="service-icon">&#9825;</div>
+          <h3>Youth Group</h3>
+          <p class="service-time">Fridays at 6:30 PM</p>
+          <p>Fun, friends, and faith for teens in grades 6-12.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <% if (upcomingEvents && upcomingEvents.length > 0) { %>
+  <section class="section events-preview-section">
+    <div class="container">
+      <h2 class="section-title text-center">Upcoming Events</h2>
+      <div class="events-grid">
+        <% upcomingEvents.forEach(event => { %>
+        <div class="event-card">
+          <div class="event-date-badge">
+            <span><%= event.date %></span>
+          </div>
+          <h3><%= event.title %></h3>
+          <p class="event-time"><%= event.time %> &bull; <%= event.location %></p>
+          <p><%= event.description.substring(0, 120) %>...</p>
+        </div>
+        <% }) %>
+      </div>
+      <div class="text-center" style="margin-top: 2rem;">
+        <a href="/events" class="btn btn-secondary">View All Events</a>
+      </div>
+    </div>
+  </section>
+  <% } %>
+
+  <section class="section cta-section">
+    <div class="container text-center">
+      <h2>We'd Love to Meet You</h2>
+      <p>Whether you're new to the area or just searching for a church home, we invite you to visit us this Sunday.</p>
+      <a href="/contact" class="btn btn-primary">Plan Your Visit</a>
+    </div>
+  </section>
+
+<%- include('partials/footer') %>

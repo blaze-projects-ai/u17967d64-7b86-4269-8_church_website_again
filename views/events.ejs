@@ -1,0 +1,65 @@
+<%- include('partials/header') %>
+
+  <section class="page-hero">
+    <div class="container">
+      <h1>Events & Services</h1>
+      <p>Stay connected with what's happening at Grace Community Church.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <h2 class="section-title">Regular Services</h2>
+      <div class="service-cards">
+        <div class="service-card">
+          <div class="service-icon">&#9788;</div>
+          <h3>Sunday Worship</h3>
+          <p class="service-time">9:00 AM & 11:00 AM</p>
+          <p>Our main weekly gathering featuring worship music, prayer, and a message from God's Word. Children's ministry available during both services for ages 0-12.</p>
+        </div>
+        <div class="service-card">
+          <div class="service-icon">&#9733;</div>
+          <h3>Wednesday Bible Study</h3>
+          <p class="service-time">7:00 PM</p>
+          <p>A midweek gathering to study Scripture together. Currently studying the book of Romans. Open to all ages and experience levels.</p>
+        </div>
+        <div class="service-card">
+          <div class="service-icon">&#9825;</div>
+          <h3>Youth Group</h3>
+          <p class="service-time">Fridays at 6:30 PM</p>
+          <p>A fun, safe environment for teens in grades 6-12 to build friendships, play games, and grow in their faith.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section alt-bg">
+    <div class="container">
+      <h2 class="section-title">Upcoming Events</h2>
+      <div class="events-list">
+        <% events.filter(e => !e.recurring).forEach(event => { %>
+        <div class="event-list-item">
+          <div class="event-list-date">
+            <span class="event-date-text"><%= event.date %></span>
+            <span class="event-time-text"><%= event.time %></span>
+          </div>
+          <div class="event-list-details">
+            <h3><%= event.title %></h3>
+            <p class="event-location"><%= event.location %></p>
+            <p><%= event.description %></p>
+          </div>
+        </div>
+        <% }) %>
+      </div>
+    </div>
+  </section>
+
+  <section class="section cta-section">
+    <div class="container text-center">
+      <h2>Want to Stay Updated?</h2>
+      <p>Contact us to join our mailing list and never miss an event.</p>
+      <a href="/contact" class="btn btn-primary">Get In Touch</a>
+    </div>
+  </section>
+
+<%- include('partials/footer') %>

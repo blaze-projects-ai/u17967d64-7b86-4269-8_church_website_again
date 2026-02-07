@@ -1,0 +1,74 @@
+[
+  {
+    "id": 1,
+    "title": "Sunday Morning Worship",
+    "date": "Every Sunday",
+    "time": "9:00 AM & 11:00 AM",
+    "description": "Join us for uplifting worship, heartfelt prayer, and a message from God's Word. Children's ministry available for ages 0-12 during both services.",
+    "location": "Main Sanctuary",
+    "recurring": true
+  },
+  {
+    "id": 2,
+    "title": "Wednesday Bible Study",
+    "date": "Every Wednesday",
+    "time": "7:00 PM",
+    "description": "Dive deeper into Scripture with our midweek Bible study. Currently studying the book of Romans. Open to all ages and experience levels.",
+    "location": "Fellowship Hall",
+    "recurring": true
+  },
+  {
+    "id": 3,
+    "title": "Spring Community Outreach",
+    "date": "March 15, 2026",
+    "time": "9:00 AM - 2:00 PM",
+    "description": "Serve our community together! We'll be partnering with local organizations to provide meals, clothing, and supplies to families in need.",
+    "location": "Church Grounds & Community Center",
+    "recurring": false
+  },
+  {
+    "id": 4,
+    "title": "Youth Group Friday Night",
+    "date": "Every Friday",
+    "time": "6:30 PM - 8:30 PM",
+    "description": "A fun, safe space for teens (grades 6-12) to build friendships, play games, and grow in faith together.",
+    "location": "Youth Center",
+    "recurring": true
+  },
+  {
+    "id": 5,
+    "title": "Easter Celebration Service",
+    "date": "April 5, 2026",
+    "time": "8:00 AM, 9:30 AM & 11:00 AM",
+    "description": "Celebrate the resurrection of Jesus Christ with special music, an inspiring message, and family activities. Invite your friends and neighbors!",
+    "location": "Main Sanctuary",
+    "recurring": false
+  },
+  {
+    "id": 6,
+    "title": "Women's Prayer Breakfast",
+    "date": "March 8, 2026",
+    "time": "8:30 AM - 10:00 AM",
+    "description": "Ladies, join us for a morning of fellowship, prayer, and encouragement. Breakfast provided. Guest speaker: Pastor Linda Morrison.",
+    "location": "Fellowship Hall",
+    "recurring": false
+  },
+  {
+    "id": 7,
+    "title": "Men's Fellowship Cookout",
+    "date": "March 22, 2026",
+    "time": "11:00 AM - 2:00 PM",
+    "description": "Men of all ages are invited for good food, fellowship, and an encouraging devotional. Bring a friend!",
+    "location": "Church Grounds",
+    "recurring": false
+  },
+  {
+    "id": 8,
+    "title": "Vacation Bible School",
+    "date": "June 15-19, 2026",
+    "time": "9:00 AM - 12:00 PM",
+    "description": "An exciting week of Bible stories, crafts, games, and music for children ages 4-12. Registration opens April 1st.",
+    "location": "Children's Wing",
+    "recurring": false
+  }
+]

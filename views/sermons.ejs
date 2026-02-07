@@ -1,0 +1,41 @@
+<%- include('partials/header') %>
+
+  <section class="page-hero">
+    <div class="container">
+      <h1>Sermons</h1>
+      <p>Explore our sermon archive and grow in your faith.</p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <h2 class="section-title">Recent Sermons</h2>
+      <div class="sermons-list">
+        <% sermons.forEach(sermon => { %>
+        <div class="sermon-card">
+          <div class="sermon-meta">
+            <span class="sermon-date"><%= sermon.date %></span>
+            <span class="sermon-duration"><%= sermon.duration %></span>
+          </div>
+          <h3 class="sermon-title"><%= sermon.title %></h3>
+          <p class="sermon-speaker"><%= sermon.speaker %></p>
+          <% if (sermon.series) { %>
+          <span class="sermon-series">Series: <%= sermon.series %></span>
+          <% } %>
+          <p class="sermon-scripture"><%= sermon.scripture %></p>
+          <p class="sermon-description"><%= sermon.description %></p>
+        </div>
+        <% }) %>
+      </div>
+    </div>
+  </section>
+
+  <section class="section alt-bg">
+    <div class="container text-center">
+      <h2 class="section-title">Listen Anytime</h2>
+      <p>Can't make it on Sunday? Our sermons are available here so you can listen at your convenience. Check back weekly for new messages.</p>
+      <p>For questions about our teaching or to request a specific topic, please <a href="/contact">contact us</a>.</p>
+    </div>
+  </section>
+
+<%- include('partials/footer') %>
